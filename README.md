@@ -15,4 +15,4 @@ graph TD
     FE -->|Consultas Seguras API| SB[(Cloud Backend: Supabase)]
     SB -->|Módulo 1| DB1[Autenticación de Cadetes]
     SB -->|Módulo 2| DB2[Base de Datos: Plan de Estudios]
-    SB -->|Módulo 3| DB3[Bitácora de Progreso y Notas]
+    SB -->|Módulo 3| DB3[Bitácora de Progreso y Notas] lll
