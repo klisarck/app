@@ -1,4 +1,5 @@
 
+
 ```markdown
 # Plataforma de Capacitación Integral y Control de Estudios de Cadetes
 
@@ -74,9 +75,9 @@ graph LR
     UC3 -.->|include| UC3_2
     UC3 -.->|include| UC3_3
 
-    UC_S1 <-- Servidor
-    UC_S2 <-- Servidor
-    UC_S3 <-- Servidor
+    Servidor --> UC_S1
+    Servidor --> UC_S2
+    Servidor --> UC_S3
 
 ```
 
