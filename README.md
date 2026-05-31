@@ -1,5 +1,5 @@
 
-```text
+```
 # Plataforma de Capacitación Integral y Control de Estudios de Cadetes
 
 Aplicación web automatizada y protegida diseñada para la gestión del plan de estudios y el progreso de conocimientos militares.
