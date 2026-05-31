@@ -1,5 +1,6 @@
 
-```
+
+```text
 # Plataforma de Capacitación Integral y Control de Estudios de Cadetes
 
 Aplicación web automatizada y protegida diseñada para la gestión del plan de estudios y el progreso de conocimientos militares.
@@ -251,7 +252,7 @@ erDiagram
         string url
     }
     EVALUACION {
-        int evaluacion_id PK
+        intBox_id PK
         int modulo_id FK
         decimal puntaje_minimo
     }
@@ -308,6 +309,5 @@ sequenceDiagram
 ```
 
 ```
-
 
 ```
