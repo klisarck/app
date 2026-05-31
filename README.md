@@ -1,3 +1,5 @@
+
+```text
 # Plataforma de Capacitación Integral y Control de Estudios de Cadetes
 
 Aplicación web automatizada y protegida diseñada para la gestión del plan de estudios y el progreso de conocimientos militares.
@@ -19,6 +21,9 @@ graph TD
     SB -->|Módulo 2| DB2[Base de Datos: Plan de Estudios]
     SB -->|Módulo 3| DB3[Bitácora de Progreso y Notas]
 
+```
+
+```mermaid
 graph LR
     classDef actorStyle fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef ucStyle fill:#ffe0e0,stroke:#fa8072,stroke-width:2px,color:#000;
@@ -73,6 +78,9 @@ graph LR
     UC_S2 <-- Servidor
     UC_S3 <-- Servidor
 
+```
+
+```mermaid
 graph TD
     classDef inicioFin fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000;
     classDef proceso fill:#fff59d,stroke:#fbc02d,stroke-width:2px,color:#000;
@@ -94,6 +102,9 @@ graph TD
     class Step1,Step2,Step3,Step4,Step5,Step6 proceso;
     class Dec1 decision;
 
+```
+
+```mermaid
 graph TD
     classDef inicioFin fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000;
     classDef proceso fill:#fff59d,stroke:#fbc02d,stroke-width:2px,color:#000;
@@ -136,6 +147,9 @@ graph TD
     class S3,S4,S9 db;
     class E1,E2,E3 error;
 
+```
+
+```mermaid
 graph TD
     classDef capaUsuario fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000;
     classDef capaAplicacion fill:#f1f8e9,stroke:#558b2f,stroke-width:2px,color:#000;
@@ -171,6 +185,9 @@ graph TD
     D --> E
     E <--> F
 
+```
+
+```mermaid
 erDiagram
     USUARIO ||--o{ PROGRESO : Registra
     USUARIO ||--o{ NOTIFICACION : Recibe
@@ -250,6 +267,9 @@ erDiagram
         boolean es_correcta
     }
 
+```
+
+```mermaid
 sequenceDiagram
     autonumber
     actor U as Usuario (Cadete/Instructor)
@@ -284,3 +304,10 @@ sequenceDiagram
     LN-->>UI: Enviar calificación y estadísticas
     UI-->>U: Mostrar nota final
     UI-->>U: Generar notificación de éxito
+
+```
+
+```
+
+
+```
