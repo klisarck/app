@@ -1,19 +1,26 @@
-name: CI Control de Cadetes
-on: [pull_request]
+name: Test Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
+      - uses: actions/checkout@v3
+      
+      # --- ESTE ES EL PASO NUEVO QUE SOLUCIONA EL ERROR ---
       - name: Configurar Bun
-        uses: oven-sh/setup-bun@v2
+        uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
-
+      # ---------------------------------------------------
+          
       - name: Instalar dependencias
         run: bun install
-
-      - name: Verificar compilación y tipos TypeScript
-        run: bun run build
+        
+      - name: Ejecutar Pruebas
+        run: bun test # En Bun, el comando nativo para pruebas suele ser "bun test"
